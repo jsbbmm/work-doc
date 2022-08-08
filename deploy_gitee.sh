@@ -10,7 +10,16 @@ rm -rf ../my-blog/jsbbmm/*
 cp -rf docs ../my-blog/jsbbmm
 cp deploy_gitee.sh deploy.sh package.json package-lock.json README.md ../my-blog/jsbbmm
 
+# 切换工作空间
+cd ../my-blog/jsbbmm
+
+# 安装依赖包
+npm install
+# 编译生成制品
+npm run docs:build
+
+
 # git 提交命令
-git add .
+git add -A
 git commit -m 'deploy'
 git push -u origin "master"
