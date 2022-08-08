@@ -11,6 +11,6 @@ cp -rf docs ../my-blog/jsbbmm
 cp deploy_gitee.sh deploy.sh package.json package-lock.json README.md ../my-blog/jsbbmm
 
 # git 提交命令
-git add -A
+git add .
 git commit -m 'deploy'
 git push -u origin "master"
